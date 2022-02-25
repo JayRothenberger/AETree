@@ -319,7 +319,7 @@ if __name__ == '__main__':
                     rfile.write(f'baseline     - train, test: {t_train_score}, {t_test_score}\n'
                                 f'noisy        - train, test: {t_train_score_noisy}, {t_test_score_noisy}\n'
                                 f'noisy int    - train, test: {t_train_score_noisy_int}, {t_test_score_noisy_int}\n'
-                                f'noisy reject - train, test: {t_test_score_noisy_reject}, {t_test_score_noisy_reject_int}\n'
+                                f'noisy reject - noise, int : {t_test_score_noisy_reject}, {t_test_score_noisy_reject_int}\n'
                                 f'rejected samples: {noisy_rejected}, {noisy_rejected_int}\n')
 
             if nn is not None:
@@ -339,7 +339,7 @@ if __name__ == '__main__':
                     rfile.write(f'baseline     - train, test: {nn_train_score}, {nn_test_score}\n'
                                 f'noisy        - train, test: {nn_train_score_noisy}, {nn_test_score_noisy}\n'
                                 f'noisy int    - train, test: {nn_train_score_noisy_int}, {nn_test_score_noisy_int}\n'
-                                f'noisy reject - train, test: {nn_test_score_noisy_reject}, {nn_test_score_noisy_reject_int}\n'
+                                f'noisy reject - noise, int : {nn_test_score_noisy_reject}, {nn_test_score_noisy_reject_int}\n'
                                 f'rejected samples: {noisy_rejected}, {noisy_rejected_int}\n')
 
             if rf is not None:
@@ -358,7 +358,7 @@ if __name__ == '__main__':
                     rfile.write(f'baseline     - train, test: {rf_train_score}, {rf_test_score}\n'
                                 f'noisy        - train, test: {rf_train_score_noisy}, {rf_test_score_noisy}\n'
                                 f'noisy int    - train, test: {rf_train_score_noisy_int}, {rf_test_score_noisy_int}\n'
-                                f'noisy reject - train, test: {rf_test_score_noisy_reject}, {rf_test_score_noisy_reject_int}\n'
+                                f'noisy reject - noise, int : {rf_test_score_noisy_reject}, {rf_test_score_noisy_reject_int}\n'
                                 f'rejected samples: {noisy_rejected}, {noisy_rejected_int}\n')
 
             display_samples = 5
