@@ -1,0 +1,5 @@
+baseline     - train, test: 0.9358333333333333, 0.9169
+noisy        - train, test: 0.77185, 0.7722
+noisy int    - train, test: 0.7824333333333333, 0.7836
+noisy reject - noise, int : 0.8711075006769564, 0.8728958282507929
+rejected samples: 6307, 5901
